@@ -1,0 +1,121 @@
+body {
+}
+
+#header {
+    border-radius: 5px;
+    z-index: 4;
+	position: fixed;
+	margin-top: -120px;
+	margin-bottom: 10px;
+	font-size: 20px;
+	width: 766px;
+	height: 97px;
+	
+}
+
+h1 {
+	float:none;
+	margin-left: 50px;
+	margin-top: 25px;
+	width: 240px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+h2 {
+	margin-bottom: -20px;
+}
+
+.KeywordEntry {
+	margin-top: 130px;
+	background-color: rgb(0,190,0);
+	width: 310px;
+	padding: 10px;
+	border-style: solid;
+	border-radius: 7px;
+	border-color: rgb(0,110,0);
+	border-width: 7px;
+}
+
+#SearchList {
+	width: 25%;
+	height: 700px;
+	float: left;
+	clear: both;
+	background-color: rgb(0,190,0);
+	padding: 10px;
+	border-style: solid;
+	border-radius: 7px;
+	border-color: rgb(0,110,0);
+	border-width: 10px;
+
+}
+
+#buttons {
+	position: relative;
+	width: 350px;
+	margin: auto;
+	padding-bottom: 20px;
+}
+
+#button {
+	border:outset;
+	float: left;
+	width: 80px;
+}
+
+#lucky {
+	border:outset;
+	float: left;
+	margin-left: 15px;
+	width: 160px;
+}
+
+#refresh {
+	border: outset;
+	width: 80px;
+	float: right;
+	margin-left: 15px;
+}
+
+li {
+	border-style: outset;
+	border-color: rgb(0,110,0);	
+	width: 90%;
+	margin-left: 10px;
+}
+
+#play {
+	position: relative;
+	z-index: 3;
+	width: 650px;
+	height: 400px;
+	border-style: groove;
+	border-width: 20px;
+	border-color: 
+	padding: 5px;
+	margin-left: 20px;
+	float: left;
+
+
+
+	background-color: rgb(0,190,0);
+	border-radius: 10px;
+	border-color: rgb(0,110,0);
+
+}
+
+iframe {
+	margin: auto;
+}
+
+.maintextarea {
+	padding 50px;	
+}
+	
+	
+	
+	
+	
+	
+	

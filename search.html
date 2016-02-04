@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+        <script src="search.js" type="text/javascript"></script>
+        <script src="https://apis.google.com/js/client.js?onload=onClientLoad" type="text/javascript"></script>
+        <link type="text/css" rel="stylesheet" href="search.css"/>
+	<title>YouTube Music</title>
+    </head>
+<body style="background-image:url(greenbackground.jpg)">
+	<div id = "header" style="background-image:url(greenheader.png)">
+    		<h1>Video Search</h1>
+	</div>
+
+	<form class = "KeywordEntry">
+	Enter A Keyword: <input type="text" id="keyword" value=""><br>
+	</form>
+	<div id = "buttons">
+		<button type="button" id = "button">Search</button>
+		<button type="button" id = "lucky" >I'm Feeling Lucky</button>
+		<button type="button" id = "refresh" >Refresh</button>
+	</div>
+	<p></p>
+        <pre id="response"></pre>
+	
+	<div id="SearchList">
+		<h2>Search Results: </h2>
+		<p>(Click on a Result to play the video)</p>
+		<div id="IDandTitle">Empty</div>
+	</div>
+
+	<div id ="play"></div>
+<script>
+$("#button").click(function(e){
+	$("#button").css("border", "inset");
+	var value = $("#keyword").val();
+	console.log(value);
+	console.log("button clicked");
+	e.preventDefault();
+	searchByKeyword(value);	
+	mouseUp("#button");
+});
+
+$("#lucky").click(function(e){
+	$("#lucky").css("border", "inset");
+	var value = $("#keyword").val();
+	console.log(value);
+	console.log("button clicked");
+	e.preventDefault();
+	search(value);
+	mouseUp("#lucky");
+});
+
+$("#refresh").click(function(e){
+	$("#refresh").css("border", "inset");
+	window.location.reload();
+});
+
+function mouseUp(id) {
+	$(id).css("border","outset");
+}
+</script>
+</body>
+</html>
